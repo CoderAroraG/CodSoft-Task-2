@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Acme — Land Faster</title>
+  <meta name="description" content="A clean, responsive landing page built with only HTML and CSS." />
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header class="header">
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <a href="#">Acme</a>
+      </div>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#showcase">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="nav-ctas">
+        <a class="btn" href="#pricing">Sign in</a>
+        <a class="btn btn-primary" href="#cta">Get started</a>
+        <label for="nav-toggle" class="burger" aria-label="Open menu"><span></span></label>
+        <input id="nav-toggle" type="checkbox" aria-hidden="true" />
+      </div>
+    </div>
+    <div class="nav-drawer">
+      <div class="container">
+        <a href="#features" onclick="document.getElementById('nav-toggle').checked=false">Features</a>
+        <a href="#showcase" onclick="document.getElementById('nav-toggle').checked=false">How it works</a>
+        <a href="#pricing" onclick="document.getElementById('nav-toggle').checked=false">Pricing</a>
+        <a href="#faq" onclick="document.getElementById('nav-toggle').checked=false">FAQ</a>
+      </div>
+    </div>
+  </header>
+
+ 
+  <section class="hero container" id="home">
+    <span class="eyebrow">NEW • Launch lanes now live</span>
+    <h1>Land faster with a beautiful, conversion‑first website.</h1>
+    <p>Acme gives you a frictionless toolkit to design, launch, and optimize landing pages — no code, no fuss. Ship your next big idea in hours.</p>
+    <div class="hero-cta">
+      <a href="#cta" class="btn btn-primary">Start free</a>
+      <a href="#showcase" class="btn">See how it works</a>
+    </div>
+
+    <div class="trust container">
+      <div class="row">
+        <div class="card">Trusted by 12,000+ teams</div>
+        <div class="card">99.9% uptime</div>
+        <div class="card">SOC 2 Type II ready</div>
+        <div class="card">24/7 human support</div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="section container" id="features">
+    <h2>Everything you need to launch</h2>
+    <p class="lead">From first draft to live page, Acme streamlines every step with sensible defaults and powerful controls — all inside your browser.</p>
+    <div class="features">
+      <article class="feat">
+        <div class="icon" aria-hidden="true">⚡</div>
+        <h3>Blazing-fast setup</h3>
+        <p>Pick a template, tweak the copy, publish. Most users ship in under 30 minutes.</p>
+      </article>
+      <article class="feat">
+        <div class="icon" aria-hidden="true">🎯</div>
+        <h3>A/B experiments</h3>
+        <p>Run multivariate tests and track winners automatically — no plugins needed.</p>
+      </article>
+      <article class="feat">
+        <div class="icon" aria-hidden="true">🔒</div>
+        <h3>Enterprise‑grade security</h3>
+        <p>Single-tenant hosting, SSO/SAML, and audit logs to keep your team compliant.</p>
+      </article>
+    </div>
+  </section>
+
+  
+  <section class="section container" id="showcase">
+    <div class="showcase">
+      <div class="panel">
+        <h2>Editor you already know</h2>
+        <p class="lead">Write like you’re in a doc. Drag blocks, drop media, and watch your page come alive instantly.</p>
+        <pre class="code" aria-label="Code sample"><code>&lt;section class="hero"&gt;
+  &lt;h1&gt;Launch in hours, not weeks.&lt;/h1&gt;
+  &lt;p&gt;Ship beautiful pages with zero code.&lt;/p&gt;
+  &lt;a class="btn btn-primary" href="#"&gt;Start free&lt;/a&gt;
+&lt;/section&gt;</code></pre>
+      </div>
+      <div class="panel">
+        <h2>Built‑in analytics</h2>
+        <p class="lead">Real‑time insights on visitors, funnels, and conversions so you can iterate with confidence.</p>
+        <ul class="ul">
+          <li>Real‑time dashboards</li>
+          <li>Event & goal tracking</li>
+          <li>Attribution & UTM reports</li>
+          <li>Export to CSV or your warehouse</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="section container" id="pricing">
+    <h2>Simple, predictable pricing</h2>
+    <p class="lead">Start free. Upgrade when you ship. Cancel anytime.</p>
+    <div class="pricing">
+      <article class="price-card">
+        <h3>Starter</h3>
+        <div class="price">$0 <span class="period">/ forever</span></div>
+        <ul class="ul">
+          <li>1 project</li>
+          <li>Basic templates</li>
+          <li>Community support</li>
+        </ul>
+        <p style="margin-top:14px"><a class="btn" href="#cta">Get started</a></p>
+      </article>
+      <article class="price-card featured" aria-label="Recommended plan">
+        <h3>Pro</h3>
+        <div class="price">$19 <span class="period">/ month</span></div>
+        <ul class="ul">
+          <li>Unlimited pages</li>
+          <li>A/B testing</li>
+          <li>Analytics & exports</li>
+          <li>Priority support</li>
+        </ul>
+        <p style="margin-top:14px"><a class="btn btn-primary" href="#cta">Choose Pro</a></p>
+      </article>
+      <article class="price-card">
+        <h3>Business</h3>
+        <div class="price">$49 <span class="period">/ month</span></div>
+        <ul class="ul">
+          <li>SSO/SAML</li>
+          <li>Audit logs</li>
+          <li>Single‑tenant hosting</li>
+          <li>99.9% uptime SLA</li>
+        </ul>
+        <p style="margin-top:14px"><a class="btn" href="#cta">Contact sales</a></p>
+      </article>
+    </div>
+  </section>
+
+
+  <section class="section container" id="testimonials">
+    <h2>Loved by teams of all sizes</h2>
+    <div class="testimonials">
+      <figure class="quote">
+        “We shipped our rebrand in a weekend. Conversions went up 23%.”<br>
+        <strong>— Jamie, Growth @ Loop</strong>
+      </figure>
+      <figure class="quote">
+        “The editor feels like magic. Our marketers can ship without engineers.”<br>
+        <strong>— Priya, PMM @ Nova</strong>
+      </figure>
+      <figure class="quote">
+        “Best landing tool we’ve used. Thoughtful defaults, zero clutter.”<br>
+        <strong>— Marco, Founder @ Driftly</strong>
+      </figure>
+    </div>
+  </section>
+
+
+  <section class="section container" id="faq">
+    <h2>Frequently asked questions</h2>
+    <details>
+      <summary>Do I need to know how to code?</summary>
+      <p>Nope. Everything happens in a visual editor. You can paste code blocks if you like, though.</p>
+    </details>
+    <details>
+      <summary>Can I use my own domain?</summary>
+      <p>Yes. Connect any domain and we’ll provision certificates automatically.</p>
+    </details>
+    <details>
+      <summary>Is there a free plan?</summary>
+      <p>Yes — the Starter plan is free forever. Upgrade only when you need to.</p>
+    </details>
+  </section>
+
+ 
+  <section class="cta" id="cta">
+    <div class="container">
+      <div class="card">
+        <h2>Ready to land faster?</h2>
+        <p class="lead">Create your account in seconds. No credit card required.</p>
+        <p><a href="#" class="btn btn-primary">Create free account</a></p>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer>
+    <div class="container foot">
+      <div class="brand"><div class="logo" aria-hidden="true"></div><a href="#">Acme</a></div>
+      <small>© <span id="y"></span> Acme, Inc. All rights reserved.</small>
+      <div style="display:flex; gap:14px">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
